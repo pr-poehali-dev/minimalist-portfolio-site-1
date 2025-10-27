@@ -132,7 +132,7 @@ const Index = () => {
             <Badge variant="secondary" className="mb-6">Доступен для проектов</Badge>
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-heading font-bold mb-6 leading-tight">
               Дизайн, который<br />
-              <span className="text-primary">работает</span>
+              <span className="bg-gradient-blue bg-clip-text text-transparent">работает</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
               Создаю минималистичные и функциональные интерфейсы для брендов, которые ценят простоту и эффективность
@@ -154,11 +154,11 @@ const Index = () => {
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Обо мне</h2>
-            <div className="w-20 h-1 bg-primary mx-auto mb-8"></div>
+            <div className="w-20 h-1 bg-gradient-blue mx-auto mb-8"></div>
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-scale-in">
-              <div className="aspect-square bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl flex items-center justify-center">
+              <div className="aspect-square bg-gradient-to-br from-blue-400/20 to-blue-900/10 rounded-2xl flex items-center justify-center">
                 <div className="text-9xl">👨‍🎨</div>
               </div>
             </div>
@@ -172,15 +172,15 @@ const Index = () => {
               </p>
               <div className="flex gap-4 pt-4">
                 <div>
-                  <div className="text-3xl font-heading font-bold text-primary">150+</div>
+                  <div className="text-3xl font-heading font-bold bg-gradient-blue bg-clip-text text-transparent">150+</div>
                   <div className="text-sm text-muted-foreground">Проектов</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-heading font-bold text-primary">50+</div>
+                  <div className="text-3xl font-heading font-bold bg-gradient-blue bg-clip-text text-transparent">50+</div>
                   <div className="text-sm text-muted-foreground">Клиентов</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-heading font-bold text-primary">8+</div>
+                  <div className="text-3xl font-heading font-bold bg-gradient-blue bg-clip-text text-transparent">8+</div>
                   <div className="text-sm text-muted-foreground">Лет опыта</div>
                 </div>
               </div>
@@ -200,10 +200,10 @@ const Index = () => {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service, index) => (
-              <Card key={index} className="border-2 hover:border-primary transition-all duration-300 hover:shadow-lg animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+              <Card key={index} className="border-2 hover:border-blue-600 transition-all duration-300 hover:shadow-lg animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Icon name={service.icon as any} size={28} className="text-primary" />
+                  <div className="w-16 h-16 bg-gradient-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Icon name={service.icon as any} size={28} className="text-blue-600" />
                   </div>
                   <h3 className="font-heading font-semibold text-lg mb-2">{service.title}</h3>
                   <p className="text-sm text-muted-foreground">{service.description}</p>
@@ -218,7 +218,7 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Портфолио</h2>
-            <div className="w-20 h-1 bg-primary mx-auto mb-8"></div>
+            <div className="w-20 h-1 bg-gradient-blue mx-auto mb-8"></div>
             <div className="flex gap-3 justify-center flex-wrap">
               <Button 
                 variant={filter === 'all' ? 'default' : 'outline'} 
@@ -317,7 +317,7 @@ const Index = () => {
               <Card key={index} className="group cursor-pointer hover:shadow-lg transition-all duration-300 animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
                 <CardContent className="p-6">
                   <Badge variant="secondary" className="mb-4">{post.category}</Badge>
-                  <h3 className="font-heading font-semibold text-xl mb-3 group-hover:text-primary transition-colors">
+                  <h3 className="font-heading font-semibold text-xl mb-3 group-hover:text-blue-600 transition-colors">
                     {post.title}
                   </h3>
                   <div className="flex items-center gap-4 text-sm text-muted-foreground">
@@ -350,8 +350,8 @@ const Index = () => {
             <div className="space-y-6 animate-fade-in">
               <Card>
                 <CardContent className="p-6 flex items-center gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Icon name="Mail" size={24} className="text-primary" />
+                  <div className="w-12 h-12 bg-gradient-blue/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Icon name="Mail" size={24} className="text-blue-600" />
                   </div>
                   <div>
                     <h4 className="font-heading font-semibold mb-1">Email</h4>
@@ -361,8 +361,8 @@ const Index = () => {
               </Card>
               <Card>
                 <CardContent className="p-6 flex items-center gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Icon name="Phone" size={24} className="text-primary" />
+                  <div className="w-12 h-12 bg-gradient-blue/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Icon name="Phone" size={24} className="text-blue-600" />
                   </div>
                   <div>
                     <h4 className="font-heading font-semibold mb-1">Телефон</h4>
@@ -372,8 +372,8 @@ const Index = () => {
               </Card>
               <Card>
                 <CardContent className="p-6 flex items-center gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Icon name="MessageCircle" size={24} className="text-primary" />
+                  <div className="w-12 h-12 bg-gradient-blue/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Icon name="MessageCircle" size={24} className="text-blue-600" />
                   </div>
                   <div>
                     <h4 className="font-heading font-semibold mb-1">Telegram</h4>

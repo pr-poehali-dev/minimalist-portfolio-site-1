@@ -28,6 +28,12 @@ export default {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
 				},
+				blue: {
+					'400': '#3B82F6',
+					'600': '#2563EB',
+					'800': '#1E40AF',
+					'900': '#1E3A8A'
+				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))'
@@ -108,6 +114,10 @@ export default {
 			fontFamily: {
 				'sans': ['Inter', 'sans-serif'],
 				'heading': ['Montserrat', 'sans-serif']
+			},
+			backgroundImage: {
+				'gradient-blue': 'linear-gradient(135deg, #3B82F6 0%, #1E3A8A 100%)',
+				'gradient-blue-radial': 'radial-gradient(circle at top right, #3B82F6 0%, #1E3A8A 100%)'
 			}
 		}
 	},
