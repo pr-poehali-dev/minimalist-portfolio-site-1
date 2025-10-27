@@ -87,26 +87,7 @@ const Index = () => {
     }
   ];
 
-  const blog = [
-    {
-      title: '10 трендов дизайна 2024',
-      date: '15 окт 2024',
-      readTime: '5 мин',
-      category: 'Тренды'
-    },
-    {
-      title: 'Как создать эффективный UI',
-      date: '10 окт 2024',
-      readTime: '8 мин',
-      category: 'UI/UX'
-    },
-    {
-      title: 'Цветовая психология в брендинге',
-      date: '5 окт 2024',
-      readTime: '6 мин',
-      category: 'Брендинг'
-    }
-  ];
+
 
   const filteredPortfolio = filter === 'all' 
     ? portfolio 
@@ -131,7 +112,6 @@ const Index = () => {
               <button onClick={() => scrollToSection('services')} className="text-sm hover:text-primary transition-colors">Услуги</button>
               <button onClick={() => scrollToSection('portfolio')} className="text-sm hover:text-primary transition-colors">Портфолио</button>
               <button onClick={() => scrollToSection('testimonials')} className="text-sm hover:text-primary transition-colors">Отзывы</button>
-              <button onClick={() => scrollToSection('blog')} className="text-sm hover:text-primary transition-colors">Блог</button>
               <button onClick={() => scrollToSection('contact')} className="text-sm hover:text-primary transition-colors">Контакты</button>
             </div>
             <Button onClick={() => scrollToSection('contact')} size="sm">Связаться</Button>
@@ -316,41 +296,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="blog" className="py-20 px-6 bg-secondary/30">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Блог</h2>
-            <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Делюсь знаниями и опытом в дизайне
-            </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            {blog.map((post, index) => (
-              <Card key={index} className="group cursor-pointer hover:shadow-lg transition-all duration-300 animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                <CardContent className="p-6">
-                  <Badge variant="secondary" className="mb-4">{post.category}</Badge>
-                  <h3 className="font-heading font-semibold text-xl mb-3 group-hover:text-blue-600 transition-colors">
-                    {post.title}
-                  </h3>
-                  <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                    <div className="flex items-center gap-1">
-                      <Icon name="Calendar" size={16} />
-                      {post.date}
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <Icon name="Clock" size={16} />
-                      {post.readTime}
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" className="py-20 px-6">
+      <section id="contact" className="py-20 px-6 bg-secondary/30">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Контакты</h2>
