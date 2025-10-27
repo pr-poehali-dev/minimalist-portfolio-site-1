@@ -171,8 +171,8 @@ const Index = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-scale-in">
-              <div className="aspect-square bg-gradient-to-br from-blue-400/20 to-blue-900/10 rounded-2xl flex items-center justify-center p-12">
-                <img src="https://cdn.poehali.dev/files/e1c64e15-65e4-4e9b-beac-f7b0acbc3269.jpg" alt="Brand Drago Logo" className="w-full h-full object-contain" />
+              <div className="aspect-square rounded-2xl overflow-hidden">
+                <img src="https://cdn.poehali.dev/files/df036371-e964-489e-b0e7-a0b816626154.jpg" alt="Brand Drago" className="w-full h-full object-cover" />
               </div>
             </div>
             <div className="space-y-6 animate-fade-in">
