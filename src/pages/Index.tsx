@@ -12,23 +12,33 @@ const Index = () => {
   const services = [
     {
       icon: 'Palette',
-      title: 'Брендинг',
-      description: 'Создание уникального визуального стиля для вашего бренда'
+      title: 'Фирменный стиль',
+      description: 'Разработка уникального визуального образа бренда от логотипа до гайдлайна'
     },
     {
       icon: 'Layout',
       title: 'UI/UX Дизайн',
-      description: 'Проектирование интерфейсов с фокусом на пользовательский опыт'
+      description: 'Проектирование интерфейсов с отличным пользовательским опытом'
     },
     {
-      icon: 'Smartphone',
-      title: 'Дизайн приложений',
-      description: 'Разработка современных мобильных интерфейсов'
+      icon: 'Type',
+      title: 'Типографика',
+      description: 'Работа со шрифтами и визуальной иерархией текста'
     },
     {
-      icon: 'Package',
-      title: 'Упаковка',
-      description: 'Дизайн упаковки продуктов и визуальных материалов'
+      icon: 'Globe',
+      title: 'Дизайн сайтов',
+      description: 'Создание современных и функциональных веб-интерфейсов'
+    },
+    {
+      icon: 'Sparkles',
+      title: 'Анимация',
+      description: 'Создание динамических элементов для проектов'
+    },
+    {
+      icon: 'Gamepad2',
+      title: 'Геймдев дизайн',
+      description: 'Дизайн игровых интерфейсов и визуальных элементов'
     }
   ];
 
@@ -111,7 +121,10 @@ const Index = () => {
       <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-md z-50 border-b">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-heading font-bold">Designer</h1>
+            <div className="flex items-center gap-3">
+              <img src="https://cdn.poehali.dev/files/e1c64e15-65e4-4e9b-beac-f7b0acbc3269.jpg" alt="Brand Drago" className="w-10 h-10" />
+              <h1 className="text-2xl font-heading font-bold">Brand Drago</h1>
+            </div>
             <div className="hidden md:flex gap-8">
               <button onClick={() => scrollToSection('hero')} className="text-sm hover:text-primary transition-colors">Главная</button>
               <button onClick={() => scrollToSection('about')} className="text-sm hover:text-primary transition-colors">Обо мне</button>
@@ -131,11 +144,11 @@ const Index = () => {
           <div className="text-center animate-fade-in-up">
             <Badge variant="secondary" className="mb-6">Доступен для проектов</Badge>
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-heading font-bold mb-6 leading-tight">
-              Дизайн, который<br />
-              <span className="bg-gradient-blue bg-clip-text text-transparent">работает</span>
+              Дизайн с<br />
+              <span className="bg-gradient-blue bg-clip-text text-transparent">душой</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Создаю минималистичные и функциональные интерфейсы для брендов, которые ценят простоту и эффективность
+              Создаю визуальные решения, которые вдохновляют: от типографики и анимации до сайтов и фирменных стилей
             </p>
             <div className="flex gap-4 justify-center">
               <Button size="lg" onClick={() => scrollToSection('portfolio')}>
@@ -158,30 +171,30 @@ const Index = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-scale-in">
-              <div className="aspect-square bg-gradient-to-br from-blue-400/20 to-blue-900/10 rounded-2xl flex items-center justify-center">
-                <div className="text-9xl">👨‍🎨</div>
+              <div className="aspect-square bg-gradient-to-br from-blue-400/20 to-blue-900/10 rounded-2xl flex items-center justify-center p-12">
+                <img src="https://cdn.poehali.dev/files/e1c64e15-65e4-4e9b-beac-f7b0acbc3269.jpg" alt="Brand Drago Logo" className="w-full h-full object-contain" />
               </div>
             </div>
             <div className="space-y-6 animate-fade-in">
-              <h3 className="text-3xl font-heading font-semibold">Привет! Я дизайнер с 8+ годами опыта</h3>
+              <h3 className="text-3xl font-heading font-semibold">Привет! Я Brand Drago</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Специализируюсь на создании чистых, интуитивных интерфейсов, которые помогают бизнесу расти. Мой подход основан на глубоком понимании пользователей и внимании к деталям.
+                Дизайнер, который всей душой предан своему делу. Моя страсть к дизайну горит уже около 5 лет: 2 года я посвятил волонтерским проектам, а последние 3 года — полноценной, оплачиваемой работе.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Работал с компаниями от стартапов до крупных корпораций, создавая дизайн, который не только красиво выглядит, но и решает бизнес-задачи.
+                Мой творческий путь включает работу с типографикой, анимацией, созданием сайтов и фирменных стилей. Получил образование в колледже и активно делюсь знаниями, обучая коллег. Наиболее яркие проекты были в игровой сфере.
               </p>
               <div className="flex gap-4 pt-4">
                 <div>
-                  <div className="text-3xl font-heading font-bold bg-gradient-blue bg-clip-text text-transparent">150+</div>
-                  <div className="text-sm text-muted-foreground">Проектов</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-heading font-bold bg-gradient-blue bg-clip-text text-transparent">50+</div>
-                  <div className="text-sm text-muted-foreground">Клиентов</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-heading font-bold bg-gradient-blue bg-clip-text text-transparent">8+</div>
+                  <div className="text-3xl font-heading font-bold bg-gradient-blue bg-clip-text text-transparent">5</div>
                   <div className="text-sm text-muted-foreground">Лет опыта</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-heading font-bold bg-gradient-blue bg-clip-text text-transparent">3</div>
+                  <div className="text-sm text-muted-foreground">Года в индустрии</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-heading font-bold bg-gradient-blue bg-clip-text text-transparent">∞</div>
+                  <div className="text-sm text-muted-foreground">Идей</div>
                 </div>
               </div>
             </div>
@@ -198,7 +211,7 @@ const Index = () => {
               Полный спектр дизайнерских услуг для вашего бизнеса
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
               <Card key={index} className="border-2 hover:border-blue-600 transition-all duration-300 hover:shadow-lg animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                 <CardContent className="p-6 text-center">
@@ -354,8 +367,8 @@ const Index = () => {
                     <Icon name="Mail" size={24} className="text-blue-600" />
                   </div>
                   <div>
-                    <h4 className="font-heading font-semibold mb-1">Email</h4>
-                    <p className="text-muted-foreground">hello@designer.com</p>
+                    <h4 className="font-heading font-semibold mb-1">Telegram</h4>
+                    <p className="text-muted-foreground">@BrandDrago</p>
                   </div>
                 </CardContent>
               </Card>
@@ -365,8 +378,8 @@ const Index = () => {
                     <Icon name="Phone" size={24} className="text-blue-600" />
                   </div>
                   <div>
-                    <h4 className="font-heading font-semibold mb-1">Телефон</h4>
-                    <p className="text-muted-foreground">+7 (999) 123-45-67</p>
+                    <h4 className="font-heading font-semibold mb-1">Канал</h4>
+                    <p className="text-muted-foreground">t.me/BrandDrago</p>
                   </div>
                 </CardContent>
               </Card>
@@ -376,8 +389,8 @@ const Index = () => {
                     <Icon name="MessageCircle" size={24} className="text-blue-600" />
                   </div>
                   <div>
-                    <h4 className="font-heading font-semibold mb-1">Telegram</h4>
-                    <p className="text-muted-foreground">@designer</p>
+                    <h4 className="font-heading font-semibold mb-1">Email</h4>
+                    <p className="text-muted-foreground">branddrago@mail.ru</p>
                   </div>
                 </CardContent>
               </Card>
@@ -412,7 +425,7 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-muted-foreground text-sm">
-              © 2024 Designer. Все права защищены.
+              © 2024 Brand Drago. Все права защищены.
             </p>
             <div className="flex gap-4">
               <Button variant="ghost" size="icon">
